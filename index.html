@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abhiram Portfolio</title>
+  <meta name="description" content="Abhiram Kolipaka - Data Science & Machine Learning Engineer portfolio.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <a href="#home" class="logo"><i id="logoText"></i><span id="logoName"></span><b>.</b></a>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#certs">Certs</a>
+      <a href="#projects">Projects</a>
+      <a href="#code">Code</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div>
+      <div class="pill"><s></s><span id="status"></span></div>
+      <h1><span id="firstName"></span><br><span class="gt" id="lastName"></span></h1>
+      <div class="role">I am a <span id="typed"></span><span class="gt">|</span></div>
+      <p id="tagline"></p>
+      <div class="btns">
+        <a class="btn p" id="resumeBtn" download>⬇ Download Resume</a>
+        <a class="btn" href="#projects">View Projects →</a>
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="pic">
+      <img id="photo" alt="Profile photo">
+      <span id="photoBadge"></span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="tag mono">// About</div>
+    <h2>About <em>Me</em></h2>
+    <p class="sub" id="aboutText"></p>
+    <div class="grid g2" id="aboutCards"></div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="tag mono">// Education</div>
+    <h2>Academic <em>Background</em></h2><br>
+    <div class="card edu" id="educationCard"></div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="tag mono">// Experience</div>
+    <h2>Professional <em>Experience</em></h2><br>
+    <div class="exp" id="experienceList"></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="tag mono">// Skills</div>
+    <h2>Tech <em>Stack</em></h2>
+    <p class="sub">The tools and techniques I reach for when building ML systems.</p>
+    <div class="grid g3" id="skillCards"></div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certs">
+    <div class="tag mono">// Certifications</div>
+    <h2>Certifi<em>cations</em></h2>
+    <p class="sub">Recognitions that back the skills above.</p>
+    <div class="grid g3" id="certCards"></div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="tag mono">// Projects</div>
+    <h2>Featured <em>Projects</em></h2>
+    <p class="sub">A mix of internship deliverables and personal builds across multiple ML domains.</p>
+    <div class="filt" id="filters">
+      <button class="on" data-filter="all">All</button>
+      <button data-filter="Internship">Internship</button>
+      <button data-filter="Personal">Personal</button>
+    </div>
+    <div class="grid g3" id="projectCards"></div>
+  </section>
+
+  <!-- CODE -->
+  <section id="code">
+    <div class="tag mono">// Code</div>
+    <h2>Code &amp; <em>Profiles</em></h2>
+    <p class="sub" id="codeText"></p>
+    <div class="btns" id="codeLinks" style="justify-content:center"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="tag mono">// Contact</div>
+    <h2>Let’s <em>Build</em></h2>
+    <p class="sub" id="contactText"></p>
+    <div class="ct">
+      <div class="ci" id="contactList"></div>
+      <form class="card" id="contactForm">
+        <div class="two">
+          <div><label>NAME</label><input id="formName" required></div>
+          <div><label>EMAIL</label><input id="formEmail" type="email" required></div>
+        </div>
+        <div><label>MESSAGE</label><textarea id="formMessage" required></textarea></div>
+        <button>➤ Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span id="footerText"></span>
+    <span>GitHub · LinkedIn · Email</span>
+  </footer>
+
+  <!-- Scripts: data.js must load before main.js -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
